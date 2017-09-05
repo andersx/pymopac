@@ -1,4 +1,6 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
+
+from __future__ import print_function
 
 import numpy as np
 from pymopac import get_energy
@@ -13,9 +15,9 @@ if __name__ == "__main__":
              [  0.354364,  0.731748,  0.541187]])
 
     e = get_energy(coordinates, atomtypes, method="PM6-D3")
-    print "E =", e
+    print("E =", e)
 
     e, g = get_gradient(coordinates, atomtypes, method="PM6-D3")
-    print "E =", e
-    print "G =", g
+    print("E =", e)
+    print("G =", g)
 

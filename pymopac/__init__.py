@@ -1,1 +1,1 @@
-from mopac import *
+from .mopac import *
